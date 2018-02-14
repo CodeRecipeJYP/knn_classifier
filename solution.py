@@ -1,2 +1,4 @@
-def suggestLabelWithKnn(image):
-  return 0
+def suggestLabelWithKnn(image, data):
+
+
+    return 0
