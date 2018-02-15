@@ -1,7 +1,11 @@
+from __future__ import absolute_import
 from loadData import loadBatch, loadTest
 from solution import suggestLabelWithKnn
 
-batchX, batchY = loadBatch()
+def __init__(self):
+  self.testX =
+def main():
+  batchX, batchY = loadBatch()
 testX, testY = loadTest()
 data = (batchX, batchY)
 
@@ -22,3 +26,6 @@ if label == suggestedLabel:
   print("correct")
 else:
   print("wrong")
+
+
+if __name__ == '__main__':

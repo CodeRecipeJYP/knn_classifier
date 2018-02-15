@@ -16,12 +16,13 @@ def load_CIFAR_batch(filename):
 
 
 def loadBatch():
-    index = 1
-    filename = "data_batch_" + str(index)
+    resultX, resultY = [], []
+    for index in range(1, 5):
+        filename = "data_batch_" + str(index)
 
-    fullpath = os.path.join(dirname, filename)
-
-    return load_CIFAR_batch(fullpath)
+        fullpath = os.path.join(dirname, filename)
+        X, Y = load_CIFAR_batch(fullpath)
+    return
 
 def loadTest():
     filename = "test_batch"
